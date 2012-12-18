@@ -66,6 +66,18 @@
     
             )
         );
+
+        register_post_type( 'accordion',
+            array(
+                'labels' => array(
+                    'name' => __( 'accordion' ),
+                    'singular_name' => __( 'accordion' )
+                ),
+                'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+                'public' => true,
+    
+            )
+        );
     }
 
 

@@ -9,6 +9,11 @@
     <script src="http://code.jquery.com/jquery-latest.js"></script>
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
+<!-- acordian -->
+    <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.ui.core.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.ui.widget.js"></script>
+    <script src="<?php bloginfo('template_url'); ?>/javascripts/jquery.ui.accordion.js"></script>
+
 <!-- custom scripts -->
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/javascripts/scripts.js"></script>
 
