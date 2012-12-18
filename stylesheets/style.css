@@ -1,0 +1,435 @@
+/*
+Theme Name: VictorOps
+Description: Premium Wordpress theme by Eternal Contrast Designs.
+Version: 1.0
+Author: Alex Lauderdale
+Author URI: http://www.eternalcontrast.com
+*/
+/* font face vars  */
+/* brand color variables -  */
+/*reset*/
+/* line 34, ../sass/style.scss */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+}
+
+/*fonts*/
+@font-face {
+  font-family: 'museo_sans_500regular';
+  src: url("../fonts/museosans_500-webfont.eot");
+  src: url("../fonts/museosans_500-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans_500-webfont.woff") format("woff"), url("../fonts/museosans_500-webfont.ttf") format("truetype"), url("../fonts/museosans_500-webfont.svg#museo_sans_500regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_900regular';
+  src: url("../fonts/museosans_900-webfont.eot");
+  src: url("../fonts/museosans_900-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans_900-webfont.woff") format("woff"), url("../fonts/museosans_900-webfont.ttf") format("truetype"), url("../fonts/museosans_900-webfont.svg#museo_sans_900regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_300regular';
+  src: url("../fonts/museosans-300-webfont.eot");
+  src: url("../fonts/museosans-300-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans-300-webfont.woff") format("woff"), url("../fonts/museosans-300-webfont.ttf") format("truetype"), url("../fonts/museosans-300-webfont.svg#museo_sans_300regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'museo_sans_100regular';
+  src: url("../fonts/museosans-100-webfont.eot");
+  src: url("../fonts/museosans-100-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/museosans-100-webfont.woff") format("woff"), url("../fonts/museosans-100-webfont.ttf") format("truetype"), url("../fonts/museosans-100-webfont.svg#museo_sans_100regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*clearfix*/
+/* line 97, ../sass/style.scss */
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+/* line 105, ../sass/style.scss */
+.clearfix {
+  display: inline-block;
+}
+
+/* start commented backslash hack \*/
+/* line 107, ../sass/style.scss */
+* html .clearfix {
+  height: 1%;
+}
+
+/* line 108, ../sass/style.scss */
+.clearfix {
+  display: block;
+}
+
+/* close commented backslash hack */
+/* line 112, ../sass/style.scss */
+body {
+  font-family: "museo_sans_300regular";
+  font-size: 12pt;
+}
+
+/* line 118, ../sass/style.scss */
+.bg-image {
+  background: url(../images/bg_leaf.png) no-repeat 500px 10px;
+  min-height: 560px;
+}
+
+/* global */
+/* line 126, ../sass/style.scss */
+strong {
+  font-family: "museo_sans_900regular";
+}
+
+/* line 130, ../sass/style.scss */
+.border-bottom {
+  border-bottom: 1px #000 dashed;
+}
+
+/* line 134, ../sass/style.scss */
+.margin-bottom {
+  margin-bottom: 20px;
+}
+
+/* line 138, ../sass/style.scss */
+.full-width {
+  width: 100%;
+}
+
+/* line 142, ../sass/style.scss */
+.wrapped {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* line 148, ../sass/style.scss */
+.left {
+  float: left;
+}
+
+/* line 152, ../sass/style.scss */
+.right {
+  float: right;
+}
+
+/* line 156, ../sass/style.scss */
+a {
+  color: #fcb040;
+  text-decoration: none;
+}
+/* line 159, ../sass/style.scss */
+a:hover {
+  color: #b07b2c;
+}
+
+/* header */
+/* line 167, ../sass/style.scss */
+header {
+  background-color: #f3eee9;
+  display: inline-block;
+  padding-bottom: 20px;
+}
+/* line 173, ../sass/style.scss */
+header nav.main-nav ul {
+  list-style: none;
+  background-color: #000;
+  padding: 10px 20px 10px 70px;
+  -webkit-border-radius: 40px;
+  -moz-border-radius: 40px;
+  -ms-border-radius: 40px;
+  -o-border-radius: 40px;
+  border-radius: 40px;
+  float: left;
+  margin-top: 15px;
+}
+/* line 180, ../sass/style.scss */
+header nav.main-nav ul li {
+  float: left;
+  margin-right: 10px;
+  padding-right: 10px;
+  margin-bottom: 0;
+  border-right: 1px solid #fcb040;
+  font-family: "museo_sans_900regular";
+  font-size: 10pt;
+}
+/* line 188, ../sass/style.scss */
+header nav.main-nav ul li:last-of-type {
+  border-right: none;
+  margin-right: 0;
+  padding-right: 0;
+}
+/* line 193, ../sass/style.scss */
+header nav.main-nav ul li a {
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 195, ../sass/style.scss */
+header nav.main-nav ul li a.active {
+  color: #fff;
+}
+
+/* line 206, ../sass/style.scss */
+.logo a {
+  background-image: url(../images/logo.png);
+  width: 234px;
+  height: 67px;
+  display: block;
+  opacity: 1;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 213, ../sass/style.scss */
+.logo a:hover {
+  opacity: .8;
+}
+
+/* type */
+/* line 221, ../sass/style.scss */
+h1 {
+  font-size: 18pt;
+  margin-bottom: 10px;
+}
+
+/* line 225, ../sass/style.scss */
+h2 {
+  font-size: 16pt;
+  margin-bottom: 10px;
+}
+
+/* line 229, ../sass/style.scss */
+h3 {
+  font-size: 14pt;
+  margin-bottom: 10px;
+}
+
+/* line 233, ../sass/style.scss */
+h4 {
+  font-size: 12pt;
+  margin-bottom: 10px;
+}
+
+/* line 238, ../sass/style.scss */
+p {
+  font-size: 12pt;
+  margin-bottom: 10px;
+  line-height: 150%;
+}
+
+/* line 244, ../sass/style.scss */
+li {
+  margin-bottom: 10px;
+  font-size: 11pt;
+}
+
+/* main */
+/* line 251, ../sass/style.scss */
+.heading {
+  text-align: right;
+  text-transform: uppercase;
+  font-size: 28pt;
+}
+
+/* blog */
+/* line 259, ../sass/style.scss */
+.blog-container {
+  width: 74%;
+  float: left;
+}
+/* line 262, ../sass/style.scss */
+.blog-container article {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+}
+/* line 266, ../sass/style.scss */
+.blog-container article h1 a {
+  color: #000;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 269, ../sass/style.scss */
+.blog-container article h1 a:hover {
+  color: #999999;
+}
+/* line 275, ../sass/style.scss */
+.blog-container article .meta p {
+  color: #666666;
+  font-size: 8pt;
+}
+/* line 282, ../sass/style.scss */
+.blog-container article .content a.read-more-link {
+  font-family: "museo_sans_900regular";
+}
+
+/* line 290, ../sass/style.scss */
+sidebar {
+  width: 21%;
+  float: right;
+}
+/* line 293, ../sass/style.scss */
+sidebar .sidebar-section {
+  margin-bottom: 40px;
+}
+/* line 295, ../sass/style.scss */
+sidebar .sidebar-section p {
+  font-size: 10pt;
+  color: #666666;
+  padding-bottom: 10px;
+}
+/* line 300, ../sass/style.scss */
+sidebar .sidebar-section ul {
+  list-style: none;
+}
+/* line 302, ../sass/style.scss */
+sidebar .sidebar-section ul.categories {
+  margin-left: -10px;
+}
+/* line 304, ../sass/style.scss */
+sidebar .sidebar-section ul.categories li {
+  margin: 3px;
+  padding: 3px;
+  font-family: "museo_sans_500regular";
+}
+/* line 310, ../sass/style.scss */
+sidebar .sidebar-section ul li {
+  margin: 10px 0;
+  padding: 10px 0;
+}
+
+/* footer */
+/* line 320, ../sass/style.scss */
+footer {
+  background-color: #f3eee9;
+  padding-bottom: 300px;
+}
+/* line 323, ../sass/style.scss */
+footer .footer-in {
+  position: relative;
+  top: -45px;
+}
+/* line 327, ../sass/style.scss */
+footer .footer-top {
+  margin-bottom: 45px;
+}
+/* line 330, ../sass/style.scss */
+footer h1 {
+  font-family: "museo_sans_900regular";
+  font-size: 14pt;
+}
+/* line 334, ../sass/style.scss */
+footer h2 {
+  font-family: "museo_sans_900regular";
+  font-size: 9pt;
+}
+/* line 338, ../sass/style.scss */
+footer p {
+  color: #bdbdbd;
+  float: left;
+  font-size: 8pt;
+}
+/* line 342, ../sass/style.scss */
+footer p.voi {
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right: 1px solid #bdbdbd;
+}
+/* line 349, ../sass/style.scss */
+footer .footer-social ul {
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+  margin-top: -2px;
+}
+/* line 354, ../sass/style.scss */
+footer .footer-social ul li {
+  float: left;
+}
+/* line 356, ../sass/style.scss */
+footer .footer-social ul li a {
+  width: 22px;
+  height: 20px;
+  display: block;
+  background-repeat: no-repeat;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+/* line 362, ../sass/style.scss */
+footer .footer-social ul li a.foot-twitter {
+  background-image: url(../images/twitter.png);
+}
+/* line 365, ../sass/style.scss */
+footer .footer-social ul li a.foot-linkIn {
+  background-image: url(../images/in.png);
+}
+/* line 368, ../sass/style.scss */
+footer .footer-social ul li a.foot-facebook {
+  background-image: url(../images/facebook.png);
+}
+/* line 371, ../sass/style.scss */
+footer .footer-social ul li a.foot-mail {
+  background-image: url(../images/mail.png);
+}
+/* line 374, ../sass/style.scss */
+footer .footer-social ul li a:hover {
+  opacity: .6;
+}
+
+/* responsify */
+@media only screen and (max-width: 700px) {
+  /* line 390, ../sass/style.scss */
+  .blog-container, sidebar {
+    width: 100%;
+  }
+  /* line 392, ../sass/style.scss */
+  .blog-container .share-this, sidebar .share-this {
+    clear: both;
+  }
+
+  /* line 397, ../sass/style.scss */
+  .right {
+    float: left;
+  }
+
+  /* line 402, ../sass/style.scss */
+  header nav {
+    float: left!important;
+    clear: both;
+  }
+  /* line 406, ../sass/style.scss */
+  header nav.main-nav ul {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+  }
+}
