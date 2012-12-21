@@ -67,6 +67,18 @@
             )
         );
 
+        register_post_type( 'employee',
+            array(
+                'labels' => array(
+                    'name' => __( 'employees' ),
+                    'singular_name' => __( 'employee' )
+                ),
+                'supports' => array( 'title', 'editor', 'excerpt', 'custom-fields', 'thumbnail' ),
+                'public' => true,
+    
+            )
+        );
+
         register_post_type( 'accordion',
             array(
                 'labels' => array(
@@ -114,6 +126,30 @@
                 )
             )
         ),
+        ///page
+        array(
+            'id' => 'my-meta-box-2',
+            'title' => 'Employee Options',
+            'pages' => array('employee'), // multiple post types
+            'context' => 'normal',
+            'priority' => 'high',
+            'fields' => array(
+                array(
+                    'name' => 'Title',
+                    'desc' => 'set employee title',
+                    'id' => 'employee_title',
+                    'type' => 'text',
+                    'std' => ''
+                ),
+                array(
+                    'name' => 'Quote',
+                    'desc' => 'set employee quote',
+                    'id' => 'employee_quote',
+                    'type' => 'textarea',
+                    'std' => ''
+                ),
+            )
+        )
     );
 
     add_action('admin_menu', 'mytheme_add_box');

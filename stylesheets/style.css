@@ -95,76 +95,107 @@ body {
 
 /* global */
 /* line 126, ../sass/style.scss */
+.med-font {
+  font-family: "museo_sans_500regular";
+}
+
+/* line 130, ../sass/style.scss */
+.hidden {
+  display: none;
+}
+
+/* line 134, ../sass/style.scss */
 em {
   font-style: italic;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 140, ../sass/style.scss */
 .yellow {
   color: #fcb040;
 }
 
-/* line 136, ../sass/style.scss */
+/* line 144, ../sass/style.scss */
 strong {
   font-family: "museo_sans_900regular";
 }
 
-/* line 140, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 .border-bottom {
   border-bottom: 1px #000 dashed;
 }
 
-/* line 144, ../sass/style.scss */
+/* line 152, ../sass/style.scss */
 .margin-bottom {
   margin-bottom: 20px;
 }
 
-/* line 148, ../sass/style.scss */
+/* line 156, ../sass/style.scss */
+.margin-top {
+  margin-top: 20px;
+}
+
+/* line 160, ../sass/style.scss */
 .full-width {
   width: 100%;
 }
 
-/* line 152, ../sass/style.scss */
+/* line 164, ../sass/style.scss */
 .wrapped {
   max-width: 960px;
   margin: 0 auto;
   padding: 20px;
 }
 
-/* line 158, ../sass/style.scss */
+/* line 170, ../sass/style.scss */
 .left, .alignleft {
   float: left;
 }
 
-/* line 162, ../sass/style.scss */
+/* line 174, ../sass/style.scss */
 .right, .alignright {
   float: right;
 }
 
-/* line 166, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 a {
   color: #fcb040;
   text-decoration: none;
 }
-/* line 169, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 a:hover {
   color: #b07b2c;
 }
 
-/* line 174, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 img {
   margin: 10px;
   height: auto;
 }
 
+/* cols */
+/* line 194, ../sass/style.scss */
+.six-col {
+  width: 50%;
+}
+
+/* line 198, ../sass/style.scss */
+.seven-col {
+  width: 58%;
+}
+
+/* line 202, ../sass/style.scss */
+.four-col {
+  width: 33%;
+}
+
 /* header */
-/* line 183, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 header {
   background-color: #f3eee9;
   display: inline-block;
   padding-bottom: 20px;
 }
-/* line 189, ../sass/style.scss */
+/* line 215, ../sass/style.scss */
 header nav.main-nav ul {
   list-style: none;
   background-color: #000;
@@ -177,7 +208,7 @@ header nav.main-nav ul {
   float: left;
   margin-top: 15px;
 }
-/* line 196, ../sass/style.scss */
+/* line 222, ../sass/style.scss */
 header nav.main-nav ul li {
   float: left;
   margin-right: 10px;
@@ -187,23 +218,26 @@ header nav.main-nav ul li {
   font-family: "museo_sans_900regular";
   font-size: 10pt;
 }
-/* line 204, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 header nav.main-nav ul li:last-of-type {
   border-right: none;
   margin-right: 0;
   padding-right: 0;
 }
-/* line 210, ../sass/style.scss */
-header nav.main-nav ul li.current_page_item a {
+/* line 235, ../sass/style.scss */
+header nav.main-nav ul li a {
   -webkit-transition-duration: 0.3s;
   -moz-transition-duration: 0.3s;
   -ms-transition-duration: 0.3s;
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
+}
+/* line 239, ../sass/style.scss */
+header nav.main-nav ul li.current_page_item a {
   color: #fff;
 }
 
-/* line 222, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .logo a {
   background-image: url(../images/logo.png);
   width: 234px;
@@ -216,52 +250,52 @@ header nav.main-nav ul li.current_page_item a {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 229, ../sass/style.scss */
+/* line 257, ../sass/style.scss */
 .logo a:hover {
   opacity: .8;
 }
 
 /* type */
-/* line 237, ../sass/style.scss */
+/* line 265, ../sass/style.scss */
 h1 {
   font-size: 16pt;
   margin-bottom: 10px;
 }
 
-/* line 241, ../sass/style.scss */
+/* line 269, ../sass/style.scss */
 h2 {
   font-size: 14pt;
   margin-bottom: 10px;
   line-height: 150%;
 }
 
-/* line 246, ../sass/style.scss */
+/* line 274, ../sass/style.scss */
 h3 {
   font-size: 12pt;
   margin-bottom: 10px;
 }
 
-/* line 250, ../sass/style.scss */
+/* line 278, ../sass/style.scss */
 h4 {
   font-size: 10pt;
   margin-bottom: 10px;
 }
 
-/* line 255, ../sass/style.scss */
+/* line 283, ../sass/style.scss */
 p {
   font-size: 10pt;
   margin-bottom: 10px;
   line-height: 150%;
 }
 
-/* line 261, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 li {
   margin-bottom: 10px;
   font-size: 10pt;
 }
 
 /* main */
-/* line 268, ../sass/style.scss */
+/* line 296, ../sass/style.scss */
 .heading {
   text-align: right;
   text-transform: uppercase;
@@ -270,40 +304,40 @@ li {
 }
 
 /* main content */
-/* line 277, ../sass/style.scss */
+/* line 305, ../sass/style.scss */
 .main-content ul {
   margin: 30px;
   list-style: square outside;
 }
-/* line 280, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 .main-content ul li {
   margin: 10px 0;
   line-height: 150%;
   color: #666666;
   list-style-image: url(../images/dot.png);
 }
-/* line 288, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 .main-content a.read-more-link {
   font-family: "museo_sans_900regular";
 }
 
 /* blog */
-/* line 296, ../sass/style.scss */
+/* line 324, ../sass/style.scss */
 .blog-container {
   width: 75%;
   float: left;
 }
-/* line 300, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 .blog-container .share-this p {
   font-size: 8pt;
 }
 
-/* line 306, ../sass/style.scss */
+/* line 334, ../sass/style.scss */
 article {
   margin-bottom: 20px;
   padding-bottom: 20px;
 }
-/* line 310, ../sass/style.scss */
+/* line 338, ../sass/style.scss */
 article h1 a {
   color: #000;
   -webkit-transition-duration: 0.3s;
@@ -312,18 +346,18 @@ article h1 a {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 313, ../sass/style.scss */
+/* line 341, ../sass/style.scss */
 article h1 a:hover {
   color: #999999;
 }
-/* line 319, ../sass/style.scss */
+/* line 347, ../sass/style.scss */
 article .meta p {
   color: #666666;
   font-size: 8pt;
 }
 
 /* page */
-/* line 328, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 .page-heading {
   margin: 10px 0;
   padding: 10px 0;
@@ -331,131 +365,230 @@ article .meta p {
 }
 
 /* investors */
-/* line 336, ../sass/style.scss */
+/* line 364, ../sass/style.scss */
 .thumb-left-info {
   width: 65%;
   margin-top: 20px;
 }
 
 /* acord */
-/* line 343, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
+.acord-contain {
+  margin-bottom: 30px;
+  display: inline;
+}
+
+/* line 374, ../sass/style.scss */
 #accordion {
   /* this is the yellow one */
+  /* this is the tan one */
 }
-/* line 344, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 #accordion h1 {
   text-align: left;
+  cursor: pointer;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -ms-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  background-image: url(../images/plus.png);
+  background-repeat: no-repeat;
+  background-position: right;
 }
-/* line 347, ../sass/style.scss */
+/* line 382, ../sass/style.scss */
+#accordion h1.ui-accordion-header-active {
+  background-image: url(../images/minus.png);
+}
+/* line 385, ../sass/style.scss */
+#accordion h1.people-heading {
+  text-align: right;
+  background-position: left;
+}
+/* line 389, ../sass/style.scss */
+#accordion h1:hover {
+  color: #7f7f7f;
+}
+/* line 395, ../sass/style.scss */
 #accordion .ui-state-active {
   border-bottom: none;
 }
-/* line 351, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
+#accordion .acord-inner {
+  -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.4);
+}
+/* line 401, ../sass/style.scss */
+#accordion .acord-inner .descrip p {
+  width: 75%;
+  line-height: 200%;
+  font-family: "museo_sans_500regular";
+  font-size: 12pt;
+}
+/* line 410, ../sass/style.scss */
 #accordion .acord-info {
   background-color: #fcb040;
   background-position: top right;
   background-repeat: no-repeat;
-  -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.5);
-  -moz-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.5);
-  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.5);
 }
-/* line 359, ../sass/style.scss */
-#accordion .acord-inner .descrip p {
-  width: 50%;
-  line-height: 250%;
-  font-family: "museo_sans_500regular";
-  font-size: 12pt;
+/* line 416, ../sass/style.scss */
+#accordion .acord-people {
+  -webkit-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2), inset 0 -2px 3px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2), inset 0 -2px 3px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.2), inset 0 -2px 3px rgba(0, 0, 0, 0.2);
+  background-color: #f3eee9;
+}
+/* line 420, ../sass/style.scss */
+#accordion .acord-people .descrip p {
+  width: 90%;
+}
+/* line 424, ../sass/style.scss */
+#accordion .acord-people .acord-people-wrapper {
+  display: inline-block;
+}
+/* line 426, ../sass/style.scss */
+#accordion .acord-people .acord-people-wrapper .active-person {
+  opacity: 1!important;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 430, ../sass/style.scss */
+#accordion .acord-people .acord-people-wrapper .person {
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  opacity: .8;
+}
+/* line 433, ../sass/style.scss */
+#accordion .acord-people .acord-people-wrapper .person img {
+  max-width: 140px;
+  height: auto;
+}
+/* line 437, ../sass/style.scss */
+#accordion .acord-people .acord-people-wrapper .person p {
+  margin-bottom: 2px;
+  margin-left: 10px;
+}
+/* line 441, ../sass/style.scss */
+#accordion .acord-people .acord-people-wrapper .person a {
+  color: #666666;
+  text-decoration: underline;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -ms-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+/* line 445, ../sass/style.scss */
+#accordion .acord-people .acord-people-wrapper .person a:hover {
+  color: #0a0a0a;
+}
+/* line 450, ../sass/style.scss */
+#accordion .acord-people .acord-people-wrapper .person-detail-wrap {
+  margin-top: 40px;
 }
 
-/* line 370, ../sass/style.scss */
+/* line 457, ../sass/style.scss */
+.content-wrap {
+  height: 240px;
+}
+
+/* line 462, ../sass/style.scss */
 sidebar {
   width: 20%;
   float: right;
 }
-/* line 373, ../sass/style.scss */
+/* line 465, ../sass/style.scss */
 sidebar .sidebar-section {
   margin-bottom: 40px;
+  margin-top: 30px;
 }
-/* line 375, ../sass/style.scss */
+/* line 468, ../sass/style.scss */
 sidebar .sidebar-section p {
   font-size: 10pt;
   color: #666666;
   padding-bottom: 10px;
 }
-/* line 380, ../sass/style.scss */
+/* line 473, ../sass/style.scss */
 sidebar .sidebar-section ul {
   list-style: none;
 }
-/* line 382, ../sass/style.scss */
+/* line 475, ../sass/style.scss */
 sidebar .sidebar-section ul.categories {
   margin-left: -10px;
 }
-/* line 384, ../sass/style.scss */
+/* line 477, ../sass/style.scss */
 sidebar .sidebar-section ul.categories li {
   margin: 3px;
   padding: 3px;
   font-family: "museo_sans_500regular";
 }
-/* line 388, ../sass/style.scss */
+/* line 481, ../sass/style.scss */
 sidebar .sidebar-section ul.categories li a {
   color: #666666;
 }
-/* line 393, ../sass/style.scss */
+/* line 486, ../sass/style.scss */
 sidebar .sidebar-section ul li {
   margin: 10px 0;
   padding: 10px 0;
 }
 
 /* footer */
-/* line 403, ../sass/style.scss */
+/* line 496, ../sass/style.scss */
 footer {
   background-color: #f3eee9;
   padding-bottom: 200px;
   margin-top: 40px;
 }
-/* line 407, ../sass/style.scss */
+/* line 500, ../sass/style.scss */
 footer .footer-in {
   position: relative;
   top: -45px;
 }
-/* line 411, ../sass/style.scss */
+/* line 504, ../sass/style.scss */
 footer .footer-top {
   margin-bottom: 45px;
 }
-/* line 414, ../sass/style.scss */
+/* line 507, ../sass/style.scss */
 footer h1 {
   font-family: "museo_sans_900regular";
   font-size: 14pt;
 }
-/* line 418, ../sass/style.scss */
+/* line 511, ../sass/style.scss */
 footer h2 {
   font-family: "museo_sans_900regular";
   font-size: 9pt;
 }
-/* line 422, ../sass/style.scss */
+/* line 515, ../sass/style.scss */
 footer p {
   color: #bdbdbd;
   float: left;
   font-size: 8pt;
 }
-/* line 426, ../sass/style.scss */
+/* line 519, ../sass/style.scss */
 footer p.voi {
   padding-left: 10px;
   padding-right: 10px;
   border-right: 1px solid #bdbdbd;
 }
-/* line 433, ../sass/style.scss */
+/* line 526, ../sass/style.scss */
 footer .footer-social ul {
   list-style: none;
   float: left;
   margin-left: 10px;
   margin-top: -2px;
 }
-/* line 438, ../sass/style.scss */
+/* line 531, ../sass/style.scss */
 footer .footer-social ul li {
   float: left;
 }
-/* line 440, ../sass/style.scss */
+/* line 533, ../sass/style.scss */
 footer .footer-social ul li a {
   width: 22px;
   height: 20px;
@@ -467,66 +600,71 @@ footer .footer-social ul li a {
   -o-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
-/* line 446, ../sass/style.scss */
+/* line 539, ../sass/style.scss */
 footer .footer-social ul li a.foot-twitter {
   background-image: url(../images/twitter.png);
 }
-/* line 449, ../sass/style.scss */
+/* line 542, ../sass/style.scss */
 footer .footer-social ul li a.foot-linkIn {
   background-image: url(../images/in.png);
 }
-/* line 452, ../sass/style.scss */
+/* line 545, ../sass/style.scss */
 footer .footer-social ul li a.foot-facebook {
   background-image: url(../images/facebook.png);
 }
-/* line 455, ../sass/style.scss */
+/* line 548, ../sass/style.scss */
 footer .footer-social ul li a.foot-mail {
   background-image: url(../images/mail.png);
 }
-/* line 458, ../sass/style.scss */
+/* line 551, ../sass/style.scss */
 footer .footer-social ul li a:hover {
   opacity: .6;
 }
 
 /* responsify */
 @media only screen and (max-width: 700px) {
-  /* line 474, ../sass/style.scss */
+  /* line 567, ../sass/style.scss */
+  .six-col, .seven-col, .four-col, .person {
+    width: 100%;
+  }
+
+  /* line 571, ../sass/style.scss */
   .blog-container, sidebar {
     width: 100%;
   }
-  /* line 476, ../sass/style.scss */
+  /* line 573, ../sass/style.scss */
   .blog-container .share-this, sidebar .share-this {
     clear: both;
   }
 
-  /* line 481, ../sass/style.scss */
+  /* line 578, ../sass/style.scss */
   .right, .alignright {
     float: left;
   }
 
-  /* line 485, ../sass/style.scss */
+  /* line 582, ../sass/style.scss */
   img {
     width: 100%;
     margin: 10px 0px;
   }
 
-  /* line 490, ../sass/style.scss */
+  /* line 587, ../sass/style.scss */
   .thumb-left-info {
     clear: both;
     width: 100%;
   }
 
-  /* line 495, ../sass/style.scss */
+  /* line 592, ../sass/style.scss */
   .heading {
     text-align: left;
   }
 
-  /* line 500, ../sass/style.scss */
+  /* line 597, ../sass/style.scss */
   header nav {
     float: left!important;
     clear: both;
   }
-  /* line 504, ../sass/style.scss */
+  /* line 601, ../sass/style.scss */
   header nav.main-nav ul {
     width: 100%;
     float: left;
@@ -535,11 +673,11 @@ footer .footer-social ul li a:hover {
   }
 
   /* acord */
-  /* line 517, ../sass/style.scss */
+  /* line 614, ../sass/style.scss */
   #accordion .acord-info {
     background-image: none!important;
   }
-  /* line 522, ../sass/style.scss */
+  /* line 619, ../sass/style.scss */
   #accordion .acord-inner .descrip p {
     width: 100%;
   }

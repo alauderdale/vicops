@@ -123,6 +123,14 @@ body{
 
 /* global */
 
+.med-font{
+    font-family:$medFont;
+}
+
+.hidden{
+    display:none;
+}
+
 em{
     font-style:italic;
 }
@@ -143,6 +151,10 @@ strong{
 
 .margin-bottom{
     margin-bottom:20px;
+}
+
+.margin-top{
+    margin-top:20px;
 }
 
 .full-width{
@@ -177,6 +189,20 @@ img{
 
 }
 
+/* cols */
+
+.six-col{
+    width:50%;
+}
+
+.seven-col{
+    width:58%;
+}
+
+.four-col{
+    width:33%;
+}
+
 /* header */
 
 
@@ -206,9 +232,11 @@ header{
                         margin-right:0;
                         padding-right:0;
                     }
+                    a{
+                        @include transition-duration(.3s);
+                    }
                     &.current_page_item{
                         a{
-                            @include transition-duration(.3s);
                                     color:#fff;
                         }
                     }
@@ -339,31 +367,95 @@ article{
 }
 
 /* acord */
-
+.acord-contain{
+    margin-bottom:30px;
+    display:inline;
+}
 #accordion{
     h1{
         text-align:left;
+        cursor:pointer;
+        @include transition-duration(.3s);
+        background-image:url(../images/plus.png);
+        background-repeat:no-repeat;
+        background-position:right;
+        &.ui-accordion-header-active{
+            background-image:url(../images/minus.png);
+        }
+        &.people-heading{
+            text-align:right;
+            background-position:left;
+        }
+        &:hover{
+            color:tint(#000,50%);
+        }
     }
+
+
     .ui-state-active{
         border-bottom:none;
+    }
+    .acord-inner{
+    @include box-shadow(inset 0 2px 3px rgba(0,0,0,.4));
+    .descrip{
+        p{
+        width:75%;
+        line-height:200%;
+        font-family:$medFont;
+        font-size:12pt;
+        }
+    }
     }
     /* this is the yellow one */
     .acord-info{
         background-color:$primaryColor;
         background-position:top right;
         background-repeat:no-repeat;
-        @include box-shadow(inset 0 2px 3px rgba(0,0,0,.5));
     }
-    .acord-inner{
+    /* this is the tan one */
+    .acord-people{
+        @include box-shadow(inset 0 2px 3px rgba(0,0,0,.2),inset 0 -2px 3px rgba(0,0,0,.2) );
+        background-color:$secondaryColor;
         .descrip{
             p{
-            width:50%;
-            line-height:250%;
-            font-family:$medFont;
-            font-size:12pt;
+                width:90%;
+            }
+        }
+        .acord-people-wrapper{
+            display:inline-block;
+            .active-person{
+                opacity:1!important;
+                @include transition-duration(.2s);
+            }
+            .person{
+                @include transition-duration(.2s);
+                opacity:.8;
+                img{
+                    max-width:140px;
+                    height:auto;
+                }
+                p{
+                    margin-bottom:2px;
+                    margin-left:10px;
+                }
+                a{
+                    color:$ltGray;
+                    text-decoration:underline;
+                    @include transition-duration(.2s);
+                    &:hover{
+                        color:shade($ltGray,90%);
+                    }
+                }
+            }
+            .person-detail-wrap{
+                margin-top:40px;
             }
         }
     }
+}
+
+.content-wrap{
+    height:240px;
 }
 
 
@@ -372,6 +464,7 @@ sidebar {
     float: right;
     .sidebar-section{
         margin-bottom:40px;
+        margin-top:30px;
         p{
             font-size:10pt;
             color:$ltGray;
@@ -470,6 +563,10 @@ footer{
 /* responsify */
 @media only screen 
 and (max-width : 700px) {
+
+    .six-col, .seven-col, .four-col, .person{
+        width:100%;
+    }
 
     .blog-container, sidebar{
         width:100%;
