@@ -39,13 +39,10 @@ Template Name: investors
                             </div>
                             <div class="left thumb-left-info">
                                 <h1>
-                                    <a href="<?php the_permalink(); ?>">
                                     <?php the_title(); ?>
-                                    </a>
                                 </h1>
                                 <p>
-                                     <?php echo excerpt(20); ?>
-                                     <a class="read-more-link" href="<?php the_permalink(); ?>">more</a>
+                                     <?php the_content(); ?>
                                 </p>
                             </div>
                         </article>

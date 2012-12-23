@@ -325,8 +325,31 @@ li{
     width:75%;
     float: left;
     .share-this{
+        opacity:1;
         p{
             font-size:8pt;
+            float: left;
+            margin-right:5px;
+        }
+        a{
+            width:14px;
+            height:14px;
+            display:block;
+            float: left;
+            margin-right:5px;
+            margin-top:-1px;
+            &.share-ln{
+                background-image:url(../images/share_in.png);
+            }
+            &.share-fb{
+                background-image:url(../images/share_fb.png);
+            }
+            &.share-mail{
+                background-image:url(../images/share_mail.png);
+            }
+            &.share-twitter{
+                background-image:url(../images/share_twitter.png);
+            }
         }
     }
 }
@@ -336,7 +359,7 @@ article{
     padding-bottom:20px;
     h1{
         a{
-            color:#000;
+            color:$ltGray;
             @include transition-duration(.3s);
             &:hover{
                 color:tint(#000,60%);
@@ -347,6 +370,39 @@ article{
         p{
             color:$ltGray;
             font-size:8pt;
+        }
+    }
+    p{
+        color:$ltGray;
+    }
+}
+
+.blog-index{
+    article{
+        .share-this{
+            opacity:.5;
+            p{
+                font-size:8pt;
+            }
+        }
+        &:first-of-type{
+            h1{
+                font-size:18pt;
+                a{
+                    color:#000!important;
+                }
+            }
+            p{
+                color:#000!important;
+                font-size:13pt;
+            }
+            .share-this{
+                opacity:1!important;
+                p{
+                    font-size:8pt;
+                    color:#000;
+                }
+             }
         }
     }
 }

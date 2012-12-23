@@ -22,6 +22,10 @@
                                     <p style="color:#000;">
                                         <strong>Share This:</strong>
                                     </p>
+                                    <a href="#" class="share-ln"></a>
+                                    <a href="#" class="share-twitter"></a>
+                                    <a href="#" class="share-fb"></a>
+                                    <a href="#" class="share-mail"></a>
                                 </div>
                             </div>
                             <div class="clearfix"></div>

@@ -4,7 +4,7 @@
                     Blog
                 </h1>
                 <div class="clearfix"></div>
-                <div class="blog-container main-content">
+                <div class="blog-container blog-index main-content">
                     <!--start the loop-->
                     <?php if (have_posts()) : ?>
                     <?php while (have_posts()) : the_post(); ?>
@@ -24,6 +24,10 @@
                                     <p style="color:#000;">
                                         <strong>Share This:</strong>
                                     </p>
+                                    <a href="#" class="share-ln"></a>
+                                    <a href="#" class="share-twitter"></a>
+                                    <a href="#" class="share-fb"></a>
+                                    <a href="#" class="share-mail"></a>
                                 </div>
                             </div>
                             <div class="clearfix"></div>

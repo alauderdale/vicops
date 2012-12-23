@@ -12,13 +12,13 @@
                                 <a class="foot-linkIn" href="#"></a>
                             </li>
                             <li>
-                                <a class="foot-twitter" href="#"></a>
+                                <a class="foot-twitter" href="https://twitter.com/GoVictorOps"></a>
                             </li>
                             <li>
                                 <a class="foot-facebook" href="#"></a>
                             </li>
                             <li>
-                                <a class="foot-mail" href="#"></a>
+                                <a class="foot-mail" href="mailto:info@victorops.com"></a>
                             </li>
                         </ul>
                     </div>

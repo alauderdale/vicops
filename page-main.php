@@ -28,7 +28,7 @@ Template Name: main
                         <?php endwhile; ?>
                         <!--people-->
                         <h1 class="heading wrapped border-bottom people-heading">
-                            Who are you
+                            Who we are
                         </h1>
                         <div class="acord-inner acord-people">
                             <div class="wrapped">
