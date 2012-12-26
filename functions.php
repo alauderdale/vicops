@@ -138,7 +138,7 @@
                 )
             )
         ),
-        ///page
+        ///employee
         array(
             'id' => 'my-meta-box-2',
             'title' => 'Employee Options',
@@ -158,6 +158,23 @@
                     'desc' => 'set employee quote',
                     'id' => 'employee_quote',
                     'type' => 'textarea',
+                    'std' => ''
+                ),
+            )
+        ),
+        ///investor
+        array(
+            'id' => 'my-meta-box-3',
+            'title' => 'Investor Options',
+            'pages' => array('investor'), // multiple post types
+            'context' => 'normal',
+            'priority' => 'high',
+            'fields' => array(
+                array(
+                    'name' => 'Link',
+                    'desc' => 'set investor link URL',
+                    'id' => 'investor_url',
+                    'type' => 'text',
                     'std' => ''
                 ),
             )

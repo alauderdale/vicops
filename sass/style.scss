@@ -451,7 +451,7 @@ article{
         }
         &.people-heading{
             text-align:right;
-            background-position:left;
+            background-position:23px 34px;
         }
         &:hover{
             color:tint(#000,50%);
@@ -498,7 +498,7 @@ article{
                 @include transition-duration(.2s);
                 opacity:.8;
                 img{
-                    max-width:140px;
+                    max-width:190px;
                     height:auto;
                 }
                 p{
@@ -625,10 +625,27 @@ footer{
 }
 
 .email{
-    margin-left:15px;
-    margin-top:-10px;
+    margin-left:10px;
+    p{
+        margin-top:10px;
+    }
     tr,th,td{
-        float: left;
+        float: left!important;
+    }
+    #snsf-form table tr {
+        &:nth-child(2){
+            position:relative;
+            left:35px;
+        }
+    }
+    form{
+        margin-top:-50px;
+    }
+    tr{
+        width:115px;
+    }
+    label{
+        display:none;
     }
     input[type="text"]{
         @include border-radius(20px);
@@ -637,16 +654,20 @@ footer{
         padding:10px;
         padding-left:15px;
         padding-right:30px;
+        width:95px!important;
+        
     }
     input[type="submit"]{
         background:none;
         border:none;
         background-image:url(../images/submit.png);
+        background-repeat:no-repeat;
         width:19px;
         height:19px;
         position:relative;
-        right:30px;
-        top:8px;
+        right: -265px;
+        top: -41px;
+        z-index: 200;
         cursor:pointer;
     }
 }
@@ -657,6 +678,9 @@ footer{
 @media only screen 
 and (max-width : 700px) {
 
+    h1,h2,h3,h4,h5,h6,p{
+        font-size:80%!important;
+    }
     .email{
         margin-left:0;
         margin-top:10px;
@@ -692,15 +716,28 @@ and (max-width : 700px) {
     }
 
     header{
+        .logo{
+            width:234px;
+            margin:0 auto;
+            float: none;
+        }
         nav{
-            float: left!important;
-            clear: both;
             &.main-nav{
+                clear: both;
+                width:183px;
+                float: none;
+                margin:0 auto;
                 ul{
-                    width: 100%;
-                    float: left;
+                    width:100%;
                     text-align:center;
                     padding:10px;
+                    display:inline-table;
+                    li{
+                        text-align:center;
+                        a{
+                            text-align:center;
+                        }
+                    }
                 }
             }
         }
@@ -709,6 +746,11 @@ and (max-width : 700px) {
     /* acord */
 
     #accordion{
+        h1{
+            &.people-heading{
+                background-position:23px 14px;
+            }
+        }
         .acord-info{
             background-image:none!important;
         }
@@ -718,6 +760,47 @@ and (max-width : 700px) {
                    width:100%; 
                 }
             }
+        }
+    }
+
+
+    .email{
+    margin-left:0px;
+    p{
+        margin-top:10px;
+    }
+    tr,th,td{
+        float: none!important;
+    }
+    form{
+        margin-top:-30px;
+        margin-left:-20px;
+    }
+    #snsf-form table tr {
+        &:nth-child(2){
+            left:0;
+        }
+    }
+    input[type="text"]{
+        @include border-radius(20px);
+        border:none;
+        box-shadow:none;
+        padding:10px;
+        padding-left:15px;
+        padding-right:30px;
+        width:200px!important;
+        
+    }
+    input[type="submit"]{
+        right:5px;
+
+        
+    }
+}
+
+    footer{
+        .footer-in{
+            top:0px!important;
         }
     }
 

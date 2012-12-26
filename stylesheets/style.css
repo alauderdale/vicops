@@ -466,7 +466,7 @@ article p {
 /* line 452, ../sass/style.scss */
 #accordion h1.people-heading {
   text-align: right;
-  background-position: left;
+  background-position: 23px 34px;
 }
 /* line 456, ../sass/style.scss */
 #accordion h1:hover {
@@ -530,7 +530,7 @@ article p {
 }
 /* line 500, ../sass/style.scss */
 #accordion .acord-people .acord-people-wrapper .person img {
-  max-width: 140px;
+  max-width: 190px;
   height: auto;
 }
 /* line 504, ../sass/style.scss */
@@ -686,14 +686,34 @@ footer .footer-social ul li a:hover {
 
 /* line 627, ../sass/style.scss */
 .email {
-  margin-left: 15px;
-  margin-top: -10px;
+  margin-left: 10px;
 }
-/* line 630, ../sass/style.scss */
+/* line 629, ../sass/style.scss */
+.email p {
+  margin-top: 10px;
+}
+/* line 632, ../sass/style.scss */
 .email tr, .email th, .email td {
-  float: left;
+  float: left!important;
 }
-/* line 633, ../sass/style.scss */
+/* line 636, ../sass/style.scss */
+.email #snsf-form table tr:nth-child(2) {
+  position: relative;
+  left: 35px;
+}
+/* line 641, ../sass/style.scss */
+.email form {
+  margin-top: -50px;
+}
+/* line 644, ../sass/style.scss */
+.email tr {
+  width: 115px;
+}
+/* line 647, ../sass/style.scss */
+.email label {
+  display: none;
+}
+/* line 650, ../sass/style.scss */
 .email input[type="text"] {
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
@@ -705,84 +725,157 @@ footer .footer-social ul li a:hover {
   padding: 10px;
   padding-left: 15px;
   padding-right: 30px;
+  width: 95px!important;
 }
-/* line 641, ../sass/style.scss */
+/* line 660, ../sass/style.scss */
 .email input[type="submit"] {
   background: none;
   border: none;
   background-image: url(../images/submit.png);
+  background-repeat: no-repeat;
   width: 19px;
   height: 19px;
   position: relative;
-  right: 30px;
-  top: 8px;
+  right: -265px;
+  top: -41px;
+  z-index: 200;
   cursor: pointer;
 }
 
 /* responsify */
 @media only screen and (max-width: 700px) {
-  /* line 660, ../sass/style.scss */
+  /* line 681, ../sass/style.scss */
+  h1, h2, h3, h4, h5, h6, p {
+    font-size: 80%!important;
+  }
+
+  /* line 684, ../sass/style.scss */
   .email {
     margin-left: 0;
     margin-top: 10px;
   }
 
-  /* line 665, ../sass/style.scss */
+  /* line 689, ../sass/style.scss */
   .six-col, .seven-col, .four-col, .person {
     width: 100%;
   }
 
-  /* line 669, ../sass/style.scss */
+  /* line 693, ../sass/style.scss */
   .blog-container, sidebar {
     width: 100%;
   }
-  /* line 671, ../sass/style.scss */
+  /* line 695, ../sass/style.scss */
   .blog-container .share-this, sidebar .share-this {
     clear: both;
   }
 
-  /* line 676, ../sass/style.scss */
+  /* line 700, ../sass/style.scss */
   .right, .alignright {
     float: left;
   }
 
-  /* line 680, ../sass/style.scss */
+  /* line 704, ../sass/style.scss */
   img {
     width: 100%;
     margin: 10px 0px;
   }
 
-  /* line 685, ../sass/style.scss */
+  /* line 709, ../sass/style.scss */
   .thumb-left-info {
     clear: both;
     width: 100%;
   }
 
-  /* line 690, ../sass/style.scss */
+  /* line 714, ../sass/style.scss */
   .heading {
     text-align: left;
   }
 
-  /* line 695, ../sass/style.scss */
-  header nav {
-    float: left!important;
-    clear: both;
+  /* line 719, ../sass/style.scss */
+  header .logo {
+    width: 234px;
+    margin: 0 auto;
+    float: none;
   }
-  /* line 699, ../sass/style.scss */
+  /* line 725, ../sass/style.scss */
+  header nav.main-nav {
+    clear: both;
+    width: 183px;
+    float: none;
+    margin: 0 auto;
+  }
+  /* line 730, ../sass/style.scss */
   header nav.main-nav ul {
     width: 100%;
-    float: left;
     text-align: center;
     padding: 10px;
+    display: inline-table;
+  }
+  /* line 735, ../sass/style.scss */
+  header nav.main-nav ul li {
+    text-align: center;
+  }
+  /* line 737, ../sass/style.scss */
+  header nav.main-nav ul li a {
+    text-align: center;
   }
 
   /* acord */
-  /* line 712, ../sass/style.scss */
+  /* line 750, ../sass/style.scss */
+  #accordion h1.people-heading {
+    background-position: 23px 14px;
+  }
+  /* line 754, ../sass/style.scss */
   #accordion .acord-info {
     background-image: none!important;
   }
-  /* line 717, ../sass/style.scss */
+  /* line 759, ../sass/style.scss */
   #accordion .acord-inner .descrip p {
     width: 100%;
+  }
+
+  /* line 767, ../sass/style.scss */
+  .email {
+    margin-left: 0px;
+  }
+  /* line 769, ../sass/style.scss */
+  .email p {
+    margin-top: 10px;
+  }
+  /* line 772, ../sass/style.scss */
+  .email tr, .email th, .email td {
+    float: none!important;
+  }
+  /* line 775, ../sass/style.scss */
+  .email form {
+    margin-top: -30px;
+    margin-left: -20px;
+  }
+  /* line 780, ../sass/style.scss */
+  .email #snsf-form table tr:nth-child(2) {
+    left: 0;
+  }
+  /* line 784, ../sass/style.scss */
+  .email input[type="text"] {
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: none;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 30px;
+    width: 200px!important;
+  }
+  /* line 794, ../sass/style.scss */
+  .email input[type="submit"] {
+    right: 5px;
+  }
+
+  /* line 802, ../sass/style.scss */
+  footer .footer-in {
+    top: 0px!important;
   }
 }

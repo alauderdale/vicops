@@ -21,8 +21,8 @@ Template Name: investors
                                     <p style="color:#000;">
                                         <strong>Share This:</strong>
                                     </p>
-                                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink() ?>&title=<?php the_title(); ?>&summary=&source=<?php bloginfo('name'); ?>" class="share-ln" target="_blank"></a>
-                                    <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" class="share-fb" target="_blank"></a>
+                                    <!-- <a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink() ?>&title=<?php the_title(); ?>&summary=&source=<?php bloginfo('name'); ?>" class="share-ln" target="_blank"></a> -->
+                                    <!-- <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" class="share-fb" target="_blank"></a> -->
                                     <?php echo direct_email(); ?>
                                         <a href="http://twitter.com/share" class=" twitter-share twitter-share-button"
                                         data-url="<?php the_permalink(); ?>"
@@ -40,11 +40,13 @@ Template Name: investors
                     <?php while ( $investorloop->have_posts() ) : $investorloop->the_post(); ?>
                         <article class="border-bottom left investor">
                             <div class="investor-thumb left">
+                                <a target="_blank" href="<?php echo get_post_meta($post->ID, 'investor_url', true); ?>">
                                 <?php 
                                 if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
                                 the_post_thumbnail();
                                 } 
                                 ?>
+                                </a>
                             </div>
                             <div class="left thumb-left-info">
                                 <h1>

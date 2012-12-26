@@ -24,7 +24,7 @@ jQuery(document).ready(function($) {
         var toLoad = $(this).attr('href')+' #content';
         $('#content').fadeOut('slow',loadContent);
         $('#load').remove();
-        $('#load').fadeIn('normal');
+        $('#load').show('normal');
         window.location.hash = $(this).attr('href').substr(0,$(this).attr('href').length-5);
         function loadContent() {
             $('#content').load(toLoad,'',showNewContent())

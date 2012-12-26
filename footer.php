@@ -31,7 +31,14 @@
                     ?>
                 <?php endif; ?>
                     <div class="left email">
-                        <?php echo do_shortcode('[newsletter]'); ?>
+                        <?php
+                        $snsf_args = array(
+                        "name"=>1,
+                        "button"=>"",
+                        "thanks" => "Thank you sooo much!"
+                        );
+                        echo do_newsletter($snsf_args);
+                        ?>
                     </div>
                 </div>
             </div>
