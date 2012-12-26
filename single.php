@@ -22,14 +22,19 @@
                                     <p style="color:#000;">
                                         <strong>Share This:</strong>
                                     </p>
-                                    <a href="#" class="share-ln"></a>
-                                    <a href="#" class="share-twitter"></a>
-                                    <a href="#" class="share-fb"></a>
-                                    <a href="#" class="share-mail"></a>
+                                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=<?php the_permalink() ?>&title=<?php the_title(); ?>&summary=&source=<?php bloginfo('name'); ?>" class="share-ln" target="_blank"></a>
+                                    <a href="http://www.facebook.com/sharer.php?u=<?php the_permalink();?>&t=<?php the_title(); ?>" class="share-fb" target="_blank"></a>
+                                    <?php echo direct_email(); ?>
+                                        <a href="http://twitter.com/share" class=" twitter-share twitter-share-button"
+                                        data-url="<?php the_permalink(); ?>"
+                                        data-via="GoVictorOps"
+                                        data-text="<?php the_title(); ?>"
+                                        data-related="GoVictorOps"
+                                        data-count="none">Tweet</a>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
-                            <div class="content">
+                            <div class="content single-content">
                                 <p>
                                    <?php the_content(); ?>
                                 </p>

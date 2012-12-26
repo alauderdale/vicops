@@ -4,7 +4,7 @@
                     Blog
                 </h1>
                 <div class="clearfix"></div>
-                <div class="blog-container main-content">
+                <div class="blog-container blog-index main-content">
                     <!--start the loop-->
                     <div class="margin-bottom cat-title border-bottom">
                     <h2>Showing Posts in: <span class="yellow">

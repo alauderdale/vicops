@@ -325,7 +325,7 @@ li{
     width:75%;
     float: left;
     .share-this{
-        opacity:1;
+    
         p{
             font-size:8pt;
             float: left;
@@ -351,8 +351,13 @@ li{
                 background-image:url(../images/share_twitter.png);
             }
         }
+        iframe{
+            margin-top:-1px;
+        }
     }
 }
+
+
 
 article{
     margin-bottom:20px;
@@ -380,7 +385,7 @@ article{
 .blog-index{
     article{
         .share-this{
-            opacity:.5;
+         
             p{
                 font-size:8pt;
             }
@@ -397,13 +402,19 @@ article{
                 font-size:13pt;
             }
             .share-this{
-                opacity:1!important;
+                
                 p{
                     font-size:8pt;
                     color:#000;
                 }
              }
         }
+    }
+}
+
+.single-content{
+    p{
+        color:#000!important;
     }
 }
 
@@ -419,7 +430,7 @@ article{
 
 .thumb-left-info{
     width:65%;
-    margin-top:20px;
+    margin-top:10px;
 }
 
 /* acord */
@@ -613,12 +624,43 @@ footer{
     }
 }
 
+.email{
+    margin-left:15px;
+    margin-top:-10px;
+    tr,th,td{
+        float: left;
+    }
+    input[type="text"]{
+        @include border-radius(20px);
+        border:none;
+        box-shadow:none;
+        padding:10px;
+        padding-left:15px;
+        padding-right:30px;
+    }
+    input[type="submit"]{
+        background:none;
+        border:none;
+        background-image:url(../images/submit.png);
+        width:19px;
+        height:19px;
+        position:relative;
+        right:30px;
+        top:8px;
+        cursor:pointer;
+    }
+}
 
 
 
 /* responsify */
 @media only screen 
 and (max-width : 700px) {
+
+    .email{
+        margin-left:0;
+        margin-top:10px;
+    }
 
     .six-col, .seven-col, .four-col, .person{
         width:100%;

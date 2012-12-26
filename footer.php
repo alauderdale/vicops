@@ -8,15 +8,15 @@
                     <div class="footer-social right">
                         <p class="voi">&copy; 2012 VictorOps Inc.</p>
                         <ul class="social-icons">
-                            <li >
+                            <!-- <li >
                                 <a class="foot-linkIn" href="#"></a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a class="foot-twitter" href="https://twitter.com/GoVictorOps"></a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a class="foot-facebook" href="#"></a>
-                            </li>
+                            </li> -->
                             <li>
                                 <a class="foot-mail" href="mailto:info@victorops.com"></a>
                             </li>
@@ -26,8 +26,12 @@
                 <div class="clearfix">
                 </div>
                 <div class="footer-bottom">
-                    <h2 class="left">Give us your name and email, and we will keep you up to date and send you something to remember us by</h2>
+                    <?php 
+                        if ( dynamic_sidebar('footer_text') ) : 
+                    ?>
+                <?php endif; ?>
                     <div class="left email">
+                        <?php echo do_shortcode('[newsletter]'); ?>
                     </div>
                 </div>
             </div>

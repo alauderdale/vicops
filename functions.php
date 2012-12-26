@@ -3,6 +3,18 @@
     if ( function_exists( 'add_theme_support' ) ) {
       add_theme_support( 'post-thumbnails' );
     }
+
+    //share
+
+    function direct_email($text=""){
+        global $post;
+        $title = htmlspecialchars($post->post_title);
+        $subject = 'Sur '.htmlspecialchars(get_bloginfo('name')).' : '.$title;
+        $body = 'Check out this content from Victorops : '.$title.'. You can read it on : '.get_permalink($post->ID);
+        $link = '<a class="share-mail" rel="nofollow" href="mailto:?subject='.rawurlencode($subject).'&amp;body='.rawurlencode($body).'" title="'.$text.' : '.$title.'">'.$text.'</a>';
+        return $link;
+    }
+
         
     //main nav
     
@@ -266,5 +278,18 @@
             }
         }
     }
+
+function suerte_widgets_init() {
+
+    register_sidebar( array(
+        'name' => 'Footer Text',
+        'id' => 'footer_text',
+        'before_widget' => '<h2 class="left">',
+        'after_widget' => '</h2>',
+        'before_title' => '',
+        'after_title' => '',
+    ) );
+}
+add_action( 'widgets_init', 'suerte_widgets_init' ); 
 
 ?>

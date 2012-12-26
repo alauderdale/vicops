@@ -16,6 +16,7 @@
 
 <!-- custom scripts -->
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/javascripts/scripts.js"></script>
+                                        <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
 
     <title><?php wp_title(''); ?> <?php bloginfo('name'); ?></title>
     <?php wp_head(); ?>
